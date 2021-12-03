@@ -6,7 +6,7 @@ This directory contains a full, working example of how to use oidc-filter togeth
 
 You will need:
 
-- kind 0.7.0+
+- kind 0.7.0+ with Kubernetes 1.18
 - kubectl
 - istioctl (tested with version 1.6.7, but anything 1.6+ should work)
 
