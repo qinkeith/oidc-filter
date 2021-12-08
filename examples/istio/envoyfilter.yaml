@@ -7,8 +7,8 @@ spec:
   - applyTo: HTTP_FILTER
     match:
       context: SIDECAR_INBOUND
-      proxy:
-        proxyVersion: '^1\.6.*'
+#      proxy:
+#        proxyVersion: '^1\.6.*'
       listener:
         filterChain:
           filter:
