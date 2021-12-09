@@ -5,7 +5,7 @@ build: clean plugin.wasm
 plugin.wasm:
 	@echo \#\#\# Building wasm module...
 	@cargo build --target wasm32-unknown-unknown --release
-	@cp target/wasm32-unknown-unknown/release/oidc_filter.wasm ./plugin.wasm
+	@cp target/wasm32-unknown-unknown/release/oidc_filter.wasm ./oidc.wasm
 
 image: oidc.wasm
 	@echo \#\#\# Building container...
