@@ -2,6 +2,7 @@
 
 kind create cluster || echo cluster already exists
 istioctl manifest apply -y
+istioctl install --set profile=default --set revision=1-6-7
 
 kubectl create -f https://raw.githubusercontent.com/keycloak/keycloak-quickstarts/latest/kubernetes-examples/keycloak.yaml
 kubectl rollout status deployment/keycloak
