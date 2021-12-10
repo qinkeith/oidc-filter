@@ -178,7 +178,7 @@ impl HttpContext for OIDCFilter {
         let token = self.get_cookie(self.config.cookie_name.as_str());
         if token != "" {
             debug!("Cookie found, setting auth header");
-            self.set_http_request_header(self.config.target_header_name.as_str(), Some(&format!("Bearer {}", token)));
+            self.set_http_request_header(self.config.target_header_name.as_str(), Some(&format!("{}", token)));
             return Action::Continue
         }
 
