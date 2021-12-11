@@ -29,7 +29,7 @@ curl -X POST 'http://localhost:8080/auth/admin/realms/master/clients' \
  '{
     "id": "test",
     "name": "test",
-    "secret": "$CLIENTSECRET",
+    "secret": "${CLIENTSECRET}",
     "redirectUris": ["*"]
  }' 
 

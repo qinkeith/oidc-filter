@@ -9,7 +9,7 @@ spec:
       app: httpbin
   jwtRules:
   - issuer: http://localhost:8080/auth/realms/master
-    jwksUri: "http://keycloak.default.svc:8080/auth/realms/master/protocol/openid-connect/certs"
+    jwksUri: http://keycloak.default.svc.cluster.local:8080/auth/realms/master/protocol/openid-connect/certs
     fromHeaders:
     - name: oidcToken
 ---
