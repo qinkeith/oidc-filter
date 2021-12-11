@@ -10,7 +10,7 @@ spec:
   jwtRules:
   - issuer: http://localhost:8080/auth/realms/master
     jwksUri: "http://keycloak.default.svc:8080/auth/realms/master/protocol/openid-connect/certs"
-    fromHeader:
+    fromHeaders:
     - name: oidcToken
 ---
 apiVersion: "security.istio.io/v1beta1"
