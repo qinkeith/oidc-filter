@@ -2,7 +2,7 @@ CONTAINER_CLI ?= docker
 
 build: clean plugin.wasm
 
-plugin.wasm:
+oidc.wasm:
 	@echo \#\#\# Building wasm module...
 	@cargo build --target wasm32-unknown-unknown --release
 	@cp target/wasm32-unknown-unknown/release/oidc_filter.wasm ./oidc.wasm
