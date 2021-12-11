@@ -1,6 +1,6 @@
 CONTAINER_CLI ?= docker
 
-build: clean plugin.wasm
+build: clean oidc.wasm
 
 oidc.wasm:
 	@echo \#\#\# Building wasm module...
@@ -14,4 +14,4 @@ image: oidc.wasm
 .PHONY: clean
 clean:
 	@echo \#\#\# Cleaning up...
-	@rm plugin.wasm || true
+	@rm oidc.wasm || true
