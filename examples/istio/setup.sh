@@ -26,12 +26,12 @@ curl -X POST 'http://localhost:8080/auth/admin/realms/master/clients' \
  -H "authorization: Bearer ${TKN}" \
  -H "Content-Type: application/json" \
  --data \
- '{
-    "id": "test",
-    "name": "test",
-    "secret": "${CLIENTSECRET}",
-    "redirectUris": ["*"]
- }' 
+ "{
+    \"id\": \"test\",
+    \"name\": \"test\",
+    \"secret\": \"${CLIENTSECRET}\",
+    \"redirectUris\": [\"*\"]
+ }" 
 
 kill -9 $port_forward_pid
 
