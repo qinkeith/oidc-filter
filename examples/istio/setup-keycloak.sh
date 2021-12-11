@@ -21,6 +21,7 @@ curl -X POST 'http://localhost:8080/auth/admin/realms/master/clients' \
  '{
     "id": "test",
     "name": "test",
+    "secret": "INSERT_CLIENT_SECRET_HERE",
     "redirectUris": ["*"]
  }' 
 
