@@ -22,3 +22,8 @@ jobs:
       run: cargo build --verbose --target wasm32-unknown-unknown --release
 #    - name: Run tests
 #      run: cargo test --verbose
+    - name: Archive envoy filter binary
+      uses: actions/upload-artifact@v2
+      with:
+        name: Envoy filter binary
+        path: target/wasm32-unknown-unknown/release/oidc_filter.wasm
