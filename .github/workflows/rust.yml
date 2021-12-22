@@ -17,15 +17,18 @@ jobs:
     steps:
     - name: hello-world-action
       uses: qinkeith/hello-world-action@master
-    - uses: actions/checkout@v2
-    - name: Add wasm32-unknown-unkown
-      run: rustup target add wasm32-unknown-unknown
-    - name: Build
-      run: cargo build --verbose --target wasm32-unknown-unknown --release
-#    - name: Run tests
-#      run: cargo test --verbose
-    - name: Archive envoy filter binary
-      uses: actions/upload-artifact@v2
-      with:
-        name: Envoy filter binary
-        path: target/wasm32-unknown-unknown/release/oidc_filter.wasm
+    - name: hello-docker-action
+      id: BASH
+      uses: qinkeith/hello-docker-action@master
+#    - uses: actions/checkout@v2
+#    - name: Add wasm32-unknown-unkown
+#      run: rustup target add wasm32-unknown-unknown
+#    - name: Build
+#      run: cargo build --verbose --target wasm32-unknown-unknown --release
+##    - name: Run tests
+##      run: cargo test --verbose
+#    - name: Archive envoy filter binary
+#      uses: actions/upload-artifact@v2
+#      with:
+#        name: Envoy filter binary
+#        path: target/wasm32-unknown-unknown/release/oidc_filter.wasm
