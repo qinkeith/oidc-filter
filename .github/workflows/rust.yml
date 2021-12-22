@@ -19,7 +19,7 @@ jobs:
       uses: qinkeith/hello-world-action@master
     - name: hello-docker-action
       id: BASH
-      uses: qinkeith/hello-docker-action@master
+      uses: qinkeith/hello-docker-action@main
 #    - uses: actions/checkout@v2
 #    - name: Add wasm32-unknown-unkown
 #      run: rustup target add wasm32-unknown-unknown
