@@ -16,10 +16,10 @@ jobs:
 
     steps:
     - name: hello-world-action
-      uses: qinkeith/hello-world-action@master
+      uses: qinkeith/actions/hello-world@master
     - name: hello-docker-action
       id: BASH
-      uses: qinkeith/hello-docker-action@main
+      uses: qinkeith/actions/hello-docker@master
       
 #    - uses: actions/checkout@v2
 #    - name: Add wasm32-unknown-unkown
