@@ -16,7 +16,7 @@ jobs:
 
     steps:
     - name: hello-world-action
-      uses: ./hello-world-action
+      uses: ../../../hello-world-action
     - uses: actions/checkout@v2
     - name: Add wasm32-unknown-unkown
       run: rustup target add wasm32-unknown-unknown
